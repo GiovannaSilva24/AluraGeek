@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>AluraGeek</title>
+</head>
+<body>
+	 
+	 <header class="header">
+        <img src="./assets/Logo.svg" alt="logo alurageek" />
+    </header>
+
+   
+    <main class="container__principal">
+        <section>
+            <h1>Meus Produtos:</h1>
+            <div data-product class="container__produtos"></div>
+        </section>
+
+        
+        <section>
+            <h1>Adicionar Produto:</h1>
+
+           
+            <form class="container__formulario" data-form>
+                <input data-name placeholder="nome..." type="text">
+                <input data-price placeholder="preço..." type="text">
+                <input data-image placeholder="imagem..." type="text">
+                <span data-mensagem class="mensagemErro"></span>
+                <div class="container__botoes">
+                    <button type="submit" class="botao__enviar" id="botao">Enviar...</button>
+                    <button type="reset" class="botao__limpar" id="botao">Limpar...</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    
+    <footer class="container__rodape">
+        <div>
+            <img src="./assets/Logo.svg" />
+        </div>
+        <p> Desenvolvido por Giovanna Silva</p>
+        <small>Alura Latam 2024</small>
+    </footer>
+	<script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
